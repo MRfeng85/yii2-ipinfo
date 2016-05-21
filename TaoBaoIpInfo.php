@@ -7,11 +7,7 @@
 	class TaoBaoIpinfo
 	{
 		public $url = 'http://ip.taobao.com/service/getIpInfo.php?ip=';
-
-		function __construct(argument)
-		{
-			# code...
-		}
+		
 		public function getinfo($ip){
 			$this->url .= $ip;
 			$ch = curl_init($this->url);
